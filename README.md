@@ -26,17 +26,19 @@ window.localStorage.removeItem('feathers-jwt')
 
 
 ## Project setup
+You can either use `npm` or `pnpm`. 
 ```
 pnpm install
 ```
+Run the above command from the main project folder as well as the `ui` folder also.
 
 ### Hot-reloads for development
 ```
 pnpm run dev
 ```
+Run the above command from the main project folder as well as the `ui` folder also (in two separate terminals). Then browse to [ http://localhost:32320/](http://localhost:32320/)
 
 ## References
 
 - Register new oAuth App with Github: https://github.com/settings/applications/new
-- Google:
 - Auth with FeathersJS: https://docs.feathersjs.com/guides/basics/authentication.html#github-login-oauth
