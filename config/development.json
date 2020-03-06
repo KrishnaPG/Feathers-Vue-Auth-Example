@@ -1,0 +1,7 @@
+{
+	"authentication": {
+		"oauth": {
+			"redirect": "http://localhost:32320/"
+		} 
+	}			
+}

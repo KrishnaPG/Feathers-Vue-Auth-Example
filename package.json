@@ -1,0 +1,63 @@
+{
+  "name": "@fict/person",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "KrishnaPG",
+    "email": "KrishnaPG@Yahoo.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && cross-env NODE_ENV=test npm run jest",
+    "dev": "cross-env NODE_ENV=development nodemon --watch ../../packages --trace-warnings --inspect=9224 src/",
+    "debug": "cross-env NODE_ENV=development DEBUG=* nodemon --inspect-brk=9224 src/index.js",
+    "serve": "NODE_ENV=production node src/index.js",
+    "jest": "jest  --detectOpenHandles --forceExit"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.2",
+    "@feathersjs/authentication-local": "^4.5.2",
+    "@feathersjs/authentication-oauth": "^4.5.2",
+    "@feathersjs/configuration": "^4.5.2",
+    "@feathersjs/errors": "^4.5.2",
+    "@feathersjs/express": "^4.5.2",
+    "@feathersjs/feathers": "^4.5.2",
+    "@feathersjs/socketio": "^4.5.2",
+    "@feathersjs/transport-commons": "^4.5.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "exit-hook": "^2.2.0",
+    "feathers-hooks-common": "^5.0.2",
+    "feathers-nedb": "^5.1.0",
+    "helmet": "^3.21.3",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.2",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2"
+  }
+}

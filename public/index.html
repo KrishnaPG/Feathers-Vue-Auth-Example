@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+  <title>FeathersJS chat</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="//unpkg.com/feathers-chat@4.0.0/public/base.css">
+  <link rel="stylesheet" href="//unpkg.com/feathers-chat@4.0.0/public/chat.css">
+</head>
+
+<body>
+  <div id="app" class="flex flex-column">
+  <a class="login-social-item netlify" @click="showLogin"><i class="fa fa-sign-in arrow"
+      aria-hidden="true"></i><span>Login</span></a>
+  <a class="login-social-item google" href="/oauth/google?redirect=dashboard"><i class="fa fa-arrow-circle-right arrow"
+      aria-hidden="true"></i><i class="fa fa-google" aria-hidden="true"></i> Login with Google </a>
+  <a class="login-social-item github" href="/oauth/github"><i class="fa fa-arrow-circle-right arrow"
+      aria-hidden="true"></i><i class="fa fa-github" aria-hidden="true"></i> Login with Github</a>
+  <a class="login-social-item facebook" href="/oauth/facebook"><i class="fa fa-arrow-circle-right arrow"
+      aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+    Login with Facebook</a>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+  <script src="//unpkg.com/@feathersjs/client@^4.3.0/dist/feathers.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>
