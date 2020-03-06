@@ -9,6 +9,7 @@ Every router level component is embedded inside a `secure` container that monito
 - Eliminates the need for separate login route
 - Redirection to the current route after login becomes easy
 
+![Screenshot](https://i.imgur.com/WoU6Hdb.jpg)
 
 ### Login setup
 To configure oAuth, set the Google `secret` and `key` values in the `config\default.json` file. You can obtain your own oAuth credentials from [Google App Console]( https://console.developers.google.com/apis/credentials?pli=1).
@@ -37,6 +38,8 @@ Run the above command from the main project folder as well as the `ui` folder al
 pnpm run dev
 ```
 Run the above command from the main project folder as well as the `ui` folder also (in two separate terminals). Then browse to [ http://localhost:32320/](http://localhost:32320/)
+
+
 
 ## References
 
