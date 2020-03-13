@@ -57,7 +57,7 @@ router.beforeEach((to, from, next) => {
     else next();
   }
   else { // the to path is a vue component (it has name)
-    authClient.reAuthenticate().then(res => {
+    authClient.reAuthenticate(true).then(res => {
       console.log("auth response: ", res);
       Store.setUser(res); // watched by secure.vue to show/hide the Login ui
     }).catch(ex => {
